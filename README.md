@@ -1,16 +1,28 @@
 # pics
+a pics flutter application
 
-A new Flutter project.
 
-## Getting Started
+#### Virtual Emulator - Mac os environment 
+Make sure to provide a internet connection to your mobile emulator
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+Access emulator path
+`cd ~/Library/Android/sdk/emulator`
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+List your svds
+`./emulator -list-avds`
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Run according your desired device
+
+`./emulator @AVDNAME -dns-server 8.8.8.8`
+eg:
+`./emulator @Nexus_5X_API_29 -dns-server 8.8.8.8`
+
+
+Run flutter:
+`./emulator @Nexus_5X_API_29 -dns-server 8.8.8.8`
+
+
+You can also run for the web
+`flutter run -d chrome`
+
